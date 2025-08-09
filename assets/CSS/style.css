@@ -15,26 +15,26 @@
     transform: translate(-50%, -50%);
     border-radius: 6px;
 }
-.text-col{
+.text-col {
     color: rgba(184, 142, 47, 1);
 }
-.box-below{
-     background-color: rgba(244, 245, 247, 1);
-     width: 285px;
+.box-below {
+    background-color: rgba(244, 245, 247, 1);
+    width: 285px;
 }
-.cus-btn{
+.cus-btn {
     color: rgba(184, 142, 47, 1);
     width: 250px;
     border: 2px rgba(184, 142, 47, 1);
     background-color: black;
     border-radius: 6px;
 }
-.hero1-section{
+.hero1-section {
     background-color: rgba(252, 248, 243, 1);
     background-size: cover;
     height: 500px;
 }
-.col-5{
+.col-5 {
     padding-top: 160px;
 }
 .custom-line {
@@ -42,4 +42,91 @@
     height: 5px;           
     background-color: black;
     margin: 40px 0;         
+}
+@media (max-width: 768px) {
+    
+    nav {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    nav .d-flex {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    nav img {
+        height: 30px;
+    }
+
+    
+    .box-on-image {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+    .hero-section {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    .box-below {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .pt-4.d-flex.justify-content-center.gap-3 {
+        flex-wrap: wrap;
+    }
+    .pt-4.d-flex.justify-content-center.gap-3 img {
+        height: auto;
+        width: 100%;
+    }
+
+    
+    .hero1-section {
+        height: auto;
+        padding: 20px 0;
+    }
+    .hero1-section .col-5 {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .hero1-section .col-7 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero1-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    footer .row {
+        text-align: center;
+    }
+    footer .col-4, footer .col-2 {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .cus-btn {
+        width: 90%;
+    }
+    .fs-3 {
+        font-size: 1.4rem;
+    }
+    .fw-bold {
+        font-size: 1rem;
+    }
 }
